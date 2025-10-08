@@ -1,11 +1,25 @@
-
-            <!DOCTYPE html>
-            <html>
-            <head>
-                <title>Hello World</title>
-            </head>
-            <body>
-                <h1>Hello, World!</h1>
-            </body>
-            </html>
-            
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text-Based CAPTCHA</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Text-Based CAPTCHA</h1>
+        <div class="captcha-area">
+            <canvas id="captcha" width="200" height="70"></canvas>
+            <button id="reload-btn">Reload</button>
+        </div>
+        <div class="input-area">
+            <input type="text" id="captcha-input" placeholder="Enter CAPTCHA">
+            <button id="check-btn">Check</button>
+        </div>
+        <button id="solve-btn">Solve</button>
+        <div id="status"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
